@@ -1,0 +1,26 @@
+So in the Lab 3 part 1 
+
+By using these lines of codes We launch the gazeebo
+
+sudo apt-get install ros-kinetic-ros-control ros-kinetic-ros-controllers
+git clone https://github.com/arebgun/dynamixel_motor
+catkin_make
+source ~/catkin_maksat/devel/setup.bash
+git clone https://github.com/fenixkz/ros_snake_robot.git
+catkin_make
+source ~/catkin_maksat/devel/setup.bash
+roslaunch gazebo_robot gazebo.launch
+
+Then we open new terminal and type rqt
+new window will appear
+
+By typing and adding 2 lines called
+robot/.../process_values 
+and
+robot/.../command
+
+by typing 
+rostopic pub robot/joint_position_controller/command and tab 2 times 
+and changing values for data from 0.0 to -2.0 we will move the robot's link
+
+Video itself:
